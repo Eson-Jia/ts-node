@@ -1,0 +1,24 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "description": "a demo show how to use ts in node.js env",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eson-Jia/ts-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eson-Jia/ts-node/issues"
+  },
+  "homepage": "https://github.com/Eson-Jia/ts-node#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^5.0.0",
+    "typescript": "^3.2.4"
+  }
+}

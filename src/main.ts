@@ -1,4 +1,6 @@
 import { sayHello, TestPromise } from "./greet";
+import { Sum } from './math';
+import { MyUpper } from './str';
 
 console.log(sayHello("TypeScript"));
 
@@ -10,3 +12,6 @@ const test = async () => {
 }
 
 test();
+
+const sum = Sum([1, 2, 2, 3, 3, 3, 3]);
+console.log(MyUpper('sum'), sum);

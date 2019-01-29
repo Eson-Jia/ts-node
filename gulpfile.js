@@ -5,7 +5,7 @@ const watch = require('gulp-watch');
 const del = require('del');
 const tsProject = ts.createProject("tsconfig.json");
 
-gulp.task("compile", () => {
+function compile() {
     return tsProject.src()
 
         .pipe(sourcemaps.init())
@@ -16,15 +16,17 @@ gulp.task("compile", () => {
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest("dist"));
-});
+}
 
-gulp.task("cleanup", gulp.series(['compile']), () => {
-    del([
+function cleanUp() {
+    return del([
         'dist/**/*'
     ]);
-});
+}
 
-gulp.task('default', () => {
+function watchify() {
     // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
-    return watch('src/**/*.ts', gulp.series('cleanup'));
-});
+    return watch('src/**/*.ts', gulp.series([cleanUp, compile]));
+}
+
+gulp.task('default', gulp.series(watchify));

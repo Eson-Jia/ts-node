@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Eson-Jia/ts-node#readme",
   "devDependencies": {
+    "@types/node": "^10.12.19",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-sourcemaps": "^2.6.4",

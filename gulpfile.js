@@ -29,4 +29,6 @@ function watchify() {
     return watch('src/**/*.ts', gulp.series([cleanUp, compile]));
 }
 
+gulp.task(compile);
+
 gulp.task('default', gulp.series(watchify));

@@ -1,6 +1,18 @@
 # ts-node
 
 a demo show how to use ts in node.js env
+[TypeScript](https://github.com/microsoft/TypeScript) is a superset of JavaScript that compiles to clean JavaScript output.
+
+## ts in 5 min
+
+[TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+[chinese tutorials](https://www.tslang.cn/docs/handbook/typescript-in-5-minutes.html)
+
+## gulp 自动化处理流
+
+[gulp github](https://github.com/gulpjs/gulp)
+[Gulp tutorials](https://www.typescriptlang.org/docs/handbook/gulp.html)
+[chinese tutorials](https://www.tslang.cn/docs/handbook/gulp.html)
 
 ## 使用.d.ts文件
 

@@ -12,9 +12,11 @@ function compile() {
         .pipe(tsProject())
         .pipe(sourcemaps.mapSources((sourcePath, file) => {
             const depth = sourcePath.match(new RegExp("\/", "g")).length - 2;
-            return new Array(depth).fill('../').concat() + sourcePath;
+            const after = new Array(depth).fill('../').concat() + sourcePath;
+            console.log(sourcePath, '=====>', after);
+            return after;
         }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('map'))
         .pipe(gulp.dest("dist"));
 }
 

@@ -1,5 +1,6 @@
 export function Sum(args: number[]) {
-    let sum: number = 0;
+    throw new Error('error');
+    let sum: number = 10;
     args.map((ele: number) => {
         sum += ele;
     });

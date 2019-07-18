@@ -4,6 +4,6 @@ export function sayHello(name: string) {
 
 export function TestPromise(echo: string): Promise<string> {
     return new Promise(resolve => {
-        setTimeout(resolve, 1000, `${echo} ${echo}`);
+        setTimeout(resolve, 10000, `${echo} ${echo}`);
     });
 }
